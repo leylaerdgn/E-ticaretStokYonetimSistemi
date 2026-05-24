@@ -8,6 +8,9 @@ public class ProductManager {
         this.products=new ArrayList<>();
     }
     
+    public void setProducts(ArrayList<Product> products) {
+    this.products = products;
+     }
     //Ürün ekleme
     public void addProduct(Product product){
         products.add(product);

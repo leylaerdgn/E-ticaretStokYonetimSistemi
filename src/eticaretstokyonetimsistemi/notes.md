@@ -28,14 +28,35 @@ Programdaki listeyi dosyaya yazar.
 loadProducts()
 Dosyadaki verileri okuyup tekrar listeye çevirir.
 
+## 4. Adım:
+Main.java dosyasını açtık ve oradan nesneler oluşturduk. Ürün ekledik ve kaydettik.
+
+## 5. Adım:
+Test amaçlı mainde GUI’ye geçmeden önce ekle/sil/güncelle/listele çalışıyor mu diye kontrol ettim
+
+## 6. Adım:
+Dosyadan yükleme kısmını main.java içine bağlayacağız. Çünkü FileManager.java içinde
+loadProducts metodunu yazdık ama onu henüz program başlarken kullanmadık.
 
 
 
 
-MOT:
+
+
+
+
+
+
+NOT:
 1. ProductManager oluşturulur.
    İçinde boş liste oluşur.
 2. FileManager products.txt dosyasını okur.
    Dosyadaki ürünleri ArrayList<Product> haline getirir.
 3. Dosyadan gelen liste ProductManager içine verilir.
 4. Artık ProductManager içindeki liste eski ürünlerle doludur.
+
+Neden new Product(...) yazıyoruz?
+Product.java bir ürün kalıbıdır.
+Ama gerçek ürün oluşturmak için new kullanırız.
+new Product(1, "Laptop", 25000, 10)
+şu demektir: Product şablonundan gerçek bir ürün oluştur.

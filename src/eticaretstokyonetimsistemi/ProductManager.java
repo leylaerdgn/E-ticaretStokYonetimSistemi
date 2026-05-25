@@ -41,7 +41,7 @@ public class ProductManager {
     }
     
     //Üürn güncelleme
-    public void update(int id, String newName, double newPrice, int newStock){
+    public void updateProduct(int id, String newName, double newPrice, int newStock){
         for(Product product: products){
             if(product.getId()==id){
                 product.setName(newName);
